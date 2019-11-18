@@ -1,0 +1,6 @@
+<!--miniprogram/pages/createPost/createpost.js.wxml-->
+<form bindsubmit="submitPost">
+<input name="content" placeholder="write somthing..."></input>
+<button form-type="submit">submit</button>
+</form>
+<button bindtap="test">test</button>
