@@ -26,42 +26,14 @@
 </view>
 
 </scroll-view>
-<view>
-  <text>甲</text>
-  <text>乙</text>
-  <text>丙</text>
-  <text>丁</text>
-  <text>戊</text>
-  <text>己</text>
-  <text>庚</text>
-</view>
-<view>
-  <text>4</text>
-  <text>5</text>
-  <text>6</text>
-  <text>7</text>
-  <text>8</text>
-  <text>9</text>
-  <text>10</text>
-</view>
 
-<view class="wanwu-container">
-<view class="tiandi-container">
-  <text>甲</text>
-  <text>4</text>
-</view>
-<view class="tiandi-container">
-  <text>乙</text>
-  <text>5</text>
-</view>
-<view class="tiandi-container">
-  <text>丙</text>
-  <text>6</text>
-</view>
-<view class="tiandi-container">
-  <text>丁</text>
-  <text>7</text>
-</view>
+
+
+<view class="wanwu-container" wx:for="{{tiangandizhi}}">
+  <text>{{item.chinese}}</text>
+  <text>{{item.year}}</text>
+
+
 </view>
 
   <!-- 上传图片 -->

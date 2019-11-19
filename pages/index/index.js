@@ -8,7 +8,8 @@ Page({
     logged: false,
     takeSession: false,
     requestResult: '',
-    posts:{}
+    posts:{},
+    tiangandizhi:{}
   },
 
   onLoad: function() {
@@ -35,11 +36,20 @@ Page({
         }
       }
     })
+    
+    wx.cloud.callFunction({
+      name: "getTiangandizhi",
+      success: (res) => {
+        console.log("getTian success res", res)
+        this.setData({
+          tiangandizhi: res.result.data
+        })
+      }
+    })
 
     wx.cloud.callFunction({
       name:"getPost",
       success:(res)=>{
-
         console.log("getpost success res",res)
         this.setData({
           posts:res.result.data
