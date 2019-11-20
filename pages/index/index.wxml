@@ -1,4 +1,20 @@
 <!--index.wxml-->
+<view class="outside-container">
+ <view  wx:for="{{tiangandizhi}}">
+  
+    <view class="tiangan-ja-item" >
+      <text>{{item.ja}}</text>
+    </view>
+     <view class="tiangan-ch-item" >
+      <text>{{item.chinese}}</text>
+    </view>
+     <view class="tiangan-year-item">
+      <text>{{item.year}}</text>
+    </view>
+  
+ </view>
+</view>
+
 <view class="container">
 
   <!-- 用户 openid -->
@@ -13,7 +29,10 @@
       <button class="userinfo-nickname" bindtap="onGetOpenid">点击获取 openid</button>
     </view>
   </view>
-  
+
+
+
+
   <button class="userinfo-nickname" bindtap="onCreatePost">create a new post</button>
 <scroll-view wx:for="{{posts}}">
 <view class="post-container">
@@ -29,12 +48,7 @@
 
 
 
-<view class="wanwu-container" wx:for="{{tiangandizhi}}">
-  <text>{{item.chinese}}</text>
-  <text>{{item.year}}</text>
 
-
-</view>
 
   <!-- 上传图片 -->
   <view class="uploader">

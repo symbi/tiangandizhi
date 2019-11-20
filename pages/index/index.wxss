@@ -8,13 +8,38 @@ page {
 }
 .wanwu-container{
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-end;
 }
+.tiangan{
+  font-size: 10px;
+}
+.outside-container{
+  display: flex;
+  flex-direction: row;
+  text-align: top;
+}
+.tiangan-ja-item{
+  width:10%;
+  height: 70px;
+  margin-top: 20px;
+  margin-left:20px;
+  font-size:12px;
+}
+.tiangan-ch-item{
+  width:10%;
+  margin-left:15px;
+  font-size:18px; 
+}
+.tiangan-year-item{
+  width:10%;
+  margin-left:18px;
+  font-size:18px; 
+}
+
 .tiandi-container{
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 .upvote-container{
   display: flex;
@@ -28,6 +53,19 @@ page {
 .arrow{
   width: 50rpx;
   height: 50rpx;
+}
+.testInfo {
+  margin-top: 40rpx;
+  height: 140rpx;
+  width: 30%;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-left: none;
+  border-right: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: all 300ms ease;
 }
 .userinfo, .uploader, .tunnel {
   margin-top: 40rpx;
